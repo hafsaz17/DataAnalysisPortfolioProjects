@@ -21,6 +21,7 @@ ORDER BY 1,2;
 ## Shows what percentage of population got covid
 SELECT 
 location, date, total_cases, population, (total_cases/population)*100 AS percent_population_infected
+FROM
 centering-sweep-399611.portfolio_project.covid_deaths
 WHERE
 location = 'Pakistan'
@@ -43,7 +44,8 @@ GROUP BY location, population
 ORDER BY percent_population_death DESC;
 
 ## Countries with Highest Death Count per Population
-SELECT location, MAX(cast(total_deaths as int)) as total_death_count
+SELECT 
+location, MAX(cast(total_deaths as int)) as total_death_count
 FROM
 centering-sweep-399611.portfolio_project.covid_deaths
 WHERE continent is not null 
@@ -52,7 +54,8 @@ ORDER BY total_death_count DESC;
 
 ## BREAKING THINGS DOWN BY CONTINENT
 ## Showing contintents with the highest death count per population
-SELECT continent, MAX(CAST(total_deaths as int)) as total_death_count
+SELECT 
+continent, MAX(CAST(total_deaths as int)) as total_death_count
 FROM
 centering-sweep-399611.portfolio_project.covid_deaths
 WHERE continent is not null 
