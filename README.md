@@ -13,6 +13,6 @@
 
 ## About
 
-This repository contains a collection of my data analytics projects. Each project focuses on different aspects, ranging from data cleaning and analysis to visualization and dashboard creation. Explore the individual project folders for more details on each project.
+This repository contains a collection of my data analytics projects. Each project focuses on different aspects, ranging from data cleaning and analysis to visualization and dashboard creation. Explore the individual projects for more details on each project.
 
 Feel free to explore the code, datasets, and analysis. If you have any questions or feedback, don't hesitate to reach out!
